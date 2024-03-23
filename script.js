@@ -1,8 +1,10 @@
-async function cadastrarUsuario(cpf, nome) {
+async function cadastrarUsuario(cpf, nome, celular, email) {
     try {
         const usuario = {
             cpf: cpf,
-            nome: nome
+            nome: nome,
+            celular: celular,
+            email: email
         };
 
         const response = await fetch('http://localhost:8080/usuarios/cadastrar', {
