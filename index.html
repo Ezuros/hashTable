@@ -12,7 +12,11 @@
     <input type="text" id="cpf" placeholder="Digite o CPF"><br>
     <label for="nome">Nome:</label>
     <input type="text" id="nome" placeholder="Digite o nome"><br>
-    <button onclick="cadastrarUsuario(document.getElementById('cpf').value, document.getElementById('nome').value)">Cadastrar</button>
+    <label for="email">Celular:</label>
+    <input type="text" id="celular" placeholder="Digite o celular"><br>
+    <label for="celular">Email:</label>
+    <input type="text" id="email" placeholder="Digite o email"><br>
+    <button onclick="cadastrarUsuario(document.getElementById('cpf').value, document.getElementById('nome').value, document.getElementById('celular').value, document.getElementById('email').value)">Cadastrar</button>
 
     <h2>Resultados</h2>
     <div id="resultadoCadastro"></div>
